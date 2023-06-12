@@ -1,0 +1,148 @@
+.dashboard-header-wrapper {
+  width: 95%;
+  padding-top: 2.5rem;
+  margin: 0 auto;
+}
+
+.dashboard-navigation {
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding: 0;
+  color: white;
+}
+
+.dashboard-header-left {
+  flex: 1;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.dashboard-header-center {
+  flex: 1;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dashboard-header-right {
+  flex: 1;
+
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  justify-items: center;
+}
+
+.dashboard-header-right .cta-buttons button {
+  margin-left: 1.2rem;
+}
+
+.dashboard-navigation-menu ul {
+  display: flex;
+}
+
+.hamburger {
+  border: 0;
+  height: 30px;
+  width: 30px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+  background: none;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(142deg)
+    brightness(99%) contrast(104%);
+}
+
+.dashboard-navigation-container .cta-buttons button {
+  padding: 15px 45px;
+  margin-bottom: 2rem;
+}
+
+.dashboard-navigation-container {
+  z-index: 999;
+}
+
+.user {
+  display: flex;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4rem;
+}
+.user-image {
+  margin-right: 1rem;
+}
+.user-image img {
+  height: 40px;
+  width: 40px;
+}
+.user-greetings {
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 990px) {
+  .dashboard-header-wrapper {
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .dashboard-header-left {
+    margin-top: 25px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dashboard-navigation-menu ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dashboard-navigation-menu.expanded ul {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 2rem 0rem;
+
+    background: linear-gradient(
+      180deg,
+      rgba(43, 121, 238, 0.1) 0%,
+      rgba(43, 121, 238, 0.1) 33.65%,
+      rgba(43, 121, 238, 0.1) 65.42%,
+      rgba(43, 121, 238, 0.1) 100%
+    );
+    backdrop-filter: blur(12.5px);
+    border-radius: 10px;
+  }
+
+  .dashboard-navigation-container {
+    padding: 3rem 0;
+    height: 100vw;
+  }
+}

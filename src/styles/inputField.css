@@ -1,0 +1,40 @@
+.inputContainer {
+  display: flex;
+  width: inherit;
+  height: 67px;
+  background: var(--field);
+  border-radius: 8px;
+}
+
+.inputField:focus {
+  background: none;
+
+  outline: none;
+}
+.inputField {
+  background: none;
+  color: var(--darkgrey);
+  border: 1px solid transparent;
+  padding: 5px 30px;
+  font-size: 1rem;
+}
+.inputField::placeholder {
+  color: var(--darkgrey);
+  font-style: normal;
+  font-weight: 400;
+  background: none;
+}
+.inputFieldIcon {
+  float: right;
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkgrey);
+}
+
+.error {
+  font-size: small;
+  color: red;
+}

@@ -1,0 +1,212 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgb(16, 19, 26, 0.9);
+  -webkit-animation: fadein 0.4s;
+  -moz-animation: fadein 0.4s;
+  -ms-animation: fadein 0.4s;
+  -o-animation: fadein 0.4s;
+  animation: fadein 0.4s;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: #132136;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  padding: 3rem;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(157, 157, 157);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  float: right;
+  margin-top: -15px;
+}
+
+.modal-title {
+  font-weight: 500;
+}
+
+.modal-content {
+  margin-top: 1.5rem;
+}
+
+.modal-left {
+  float: left;
+}
+
+.modal-right {
+  float: right;
+}
+
+.package-name {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.modal-left span {
+  color: var(--secondary-color);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.modal-description {
+  color: var(--secondary-color);
+}
+
+.package-feature-item {
+  margin: 1.5rem 0;
+}
+
+.package-feature-item img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.package-feature-item .package-feature {
+  display: inline;
+  margin-left: 0.7rem;
+}
+
+.value-button {
+  display: inline-block;
+  margin: 0;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  -webkit-touch-callout: none;
+  user-select: none;
+  opacity: 0.3;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.quantityCounter #decrease {
+  margin-right: -4px;
+  border-radius: 50% 0 0 50%;
+}
+
+.quantityCounter #increase {
+  margin-left: -4px;
+  border-radius: 0 50% 50% 0;
+}
+
+.quantityCounter #input-wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.quantityCounter input#number {
+  text-align: center;
+  border: none;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  padding-left: 10px;
+  font-family: "General Sans", sans-serif;
+}
+
+.right-item {
+  margin-bottom: 1rem;
+}
+
+.item-title {
+  color: var(--secondary-color);
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 800px) {
+  .modal {
+    margin: initial 4rem;
+  }
+
+  .modal-right {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .modal {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal {
+    max-width: 250px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

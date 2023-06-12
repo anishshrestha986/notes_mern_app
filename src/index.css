@@ -1,0 +1,90 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  background-image: url("./img/bg.png");
+  font-size: 0.9rem;
+  font-weight: 500;
+  height: 100%;
+  /* background-position: center; */
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: #8cc3bf;
+  color: white;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #756df5;
+  --secondary-color: #edadbb;
+  --gradient: linear-gradient(
+    90deg,
+    #756df5 19.7%,
+    #edadbb 30.89%,
+    #fbd0b2 44.56%,
+    #edadbb 57.02%
+  );
+  --button-gradient: linear-gradient(
+    180deg,
+    #726af0 0%,
+    #9b81e4 60.24%,
+    #c89ad0 95.14%,
+    #ffb7b7 100%
+  );
+
+  --glass-background: linear-gradient(
+    180deg,
+    rgba(43, 121, 238, 0.1) 0%,
+    rgba(43, 121, 238, 0.1) 33.65%,
+    rgba(43, 121, 238, 0.1) 65.42%,
+    rgba(43, 121, 238, 0.1) 100%
+  );
+  --glass-backdrop: blur(10px);
+  --grey: #0d2c5a;
+  --darkgrey: rgba(31, 55, 91, 0.82);
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    180deg,
+    rgba(43, 121, 238, 0.1) 0%,
+    rgba(43, 121, 238, 0.1) 33.65%,
+    rgba(43, 121, 238, 0.1) 65.42%,
+    rgba(43, 121, 238, 0.1) 100%
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #276cd4;
+}
+@media only screen and (max-width: 1300px) {
+  body {
+    overflow-y: visible;
+  }
+}

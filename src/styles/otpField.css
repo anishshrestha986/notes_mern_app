@@ -1,0 +1,41 @@
+/* stylelint-disable selector-class-pattern */
+
+.otpField {
+  text-align: center;
+  margin: 2rem;
+}
+
+.otpField input {
+  display: inline-block;
+  max-width: 40px !important;
+  padding: 15px 3px;
+  margin: 0 0.3rem;
+  outline: none;
+  background: none !important;
+  color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 7px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.otpField input::-webkit-inner-spin-button,
+.otpField input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .otpField {
+    margin-top: 100px;
+  }
+
+  .otpField input {
+    font-size: 1rem;
+    padding: 9px 0 !important;
+    margin: 0 0.35rem 0 0;
+    width: 35px;
+    border-radius: 6px;
+    text-align: center;
+  }
+}

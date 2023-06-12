@@ -1,0 +1,103 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.navigate-back img {
+  vertical-align: middle;
+}
+
+.navigate-back p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1rem;
+  vertical-align: middle;
+  color: var(--secondary-color);
+}
+
+.form-header {
+  margin-top: 5rem;
+}
+
+.form-title {
+  font-size: 2.1rem;
+}
+
+.form-description {
+  color: var(--secondary-color);
+  margin-top: 7px;
+}
+
+.auth-form {
+  margin-top: 1rem;
+}
+
+.form-container input {
+  width: 400px !important;
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid var(--secondary-color);
+  padding: 25px 0px;
+  display: block;
+  color: white;
+  width: 100%;
+  font-family: "General Sans", sans-serif;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.form-container input::placeholder {
+  color: var(--secondary-color);
+}
+
+.form-container input::after input::selection {
+  background: none;
+}
+
+.auth-form button {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.signup-redirect,
+.login-redirect {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 13px;
+}
+
+.signup-page-link,
+.login-page-link {
+  color: var(--primary-color);
+}
+
+.auth-form-wrapper {
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 900px) {
+  .form-container {
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 10%;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .auth-form {
+    margin: 0;
+  }
+
+  .form-header {
+    margin-top: 4rem;
+  }
+
+  .auth-form button {
+    margin-top: 5rem;
+  }
+}

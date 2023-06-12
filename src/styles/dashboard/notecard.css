@@ -1,0 +1,45 @@
+.note-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  padding: 32px;
+  font-weight: 500;
+  font-size: 12px;
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  text-align: left;
+  background: var(--glass-background);
+  backdrop-filter: var(--glass-backdrop);
+  border-bottom: 0.2px solid #294068;
+  margin: 1rem;
+}
+
+.note-label {
+  margin-bottom: 0.3rem;
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.note-content {
+  line-height: 21px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.note-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.posted-info {
+  display: flex;
+  margin-top: auto;
+}
+
+.posted-by {
+  flex: 2;
+  cursor: pointer;
+}
