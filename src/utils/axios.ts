@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import axios, { InternalAxiosRequestConfig } from "axios";
+import axios, { AxiosHeaders, InternalAxiosRequestConfig } from "axios";
 import { getLocalStorage } from "./storage";
 
 axios.defaults.headers.post["Content-Type"] = "application/json";
@@ -7,16 +7,16 @@ axios.defaults.headers.post["Content-Type"] = "application/json";
 const createApi = (path: string) => {
   const api = axios.create({
     baseURL: `${process.env.API_URL}${path}`,
-    timeout: 10000,
+    timeout: 50000,
     headers: {
       "Content-Type": "application/json",
     },
   });
   api.interceptors.request.use(
     (config: InternalAxiosRequestConfig) => {
-      // if (config.headers === undefined) {
-      //   config.headers = {};
-      // }
+      if (config.headers === undefined) {
+        config.headers = {} as AxiosHeaders;
+      }
       const token = getLocalStorage("access_token");
       if (token) {
         config.headers.Authorization = `Bearer ${token}`;
